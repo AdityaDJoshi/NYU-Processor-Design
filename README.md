@@ -55,3 +55,10 @@ all: cmake_check_build_system
 .PHONY : all
 ```
 
+Relative Paths for target_sources and target_include_directories:
+The paths are relative to the the CML file(in which they are used) and are in our case navigated from the root folder ie the Lab1 folder into the respective include and src folders. 
+
+Cmake and Ninjas differences:
+From what I understand these adjectives and their following explainations cover all the differences. So CMake is a build generator, that "generates" files that can then be built and doesn't directly execute build commands. Ninja is a build tool that directly executes build commands based on a build file. CMake is meant to promote cross platform development while allowing complex Turing Complete logics like conditions and loops. Ninja is meant to promote simplicity and quickness for large projects. It does not have a programmable/customisable build file ie as devs one must rely on CMake to accomodate these bells and whistles into a Ninja build. I referred to these to understand the differences [link1](https://www.reddit.com/r/embedded/comments/sbhg3q/can_you_help_me_understand_what_the_difference_of/), [link2](https://iq.opengenus.org/cmake-vs-ninja/) and [link3](https://www.youtube.com/watch?v=YbgH7yat-Jo)
+
+Why run CMake in a seperate build directory? Convenience and dev friendly sums up why for me. In essence we can make minor changes and compare two build results while making changes to the CML without erroneously overwriting these two builds. Also having these build results in the same directory as source code isn't super organised and aesthetically pleasing. 

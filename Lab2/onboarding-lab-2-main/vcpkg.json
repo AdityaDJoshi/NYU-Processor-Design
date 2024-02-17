@@ -1,0 +1,31 @@
+{
+  "name": "week-two-lab",
+  "version": "1.0.0",
+  "description": "Template for week two lab",
+  "homepage": "https://github.com/NYU-Processor-Design/nyu-cmake",
+  "maintainers": [
+    "Vito Gamberini <vito@gamberini.email>"
+  ],
+  "license": "CC0-1.0",
+  "dependencies": [
+    "nyu-cmake",
+    "catch2"
+  ],
+  "vcpkg-configuration": {
+    "default-registry": {
+      "kind": "git",
+      "baseline": "5a38b5ec0eee3d1a1a6faab5e944617fee2697cf",
+      "repository": "https://github.com/microsoft/vcpkg.git"
+    },
+    "registries": [
+      {
+        "kind": "git",
+        "baseline": "78f50d1f7f6f21a9fb28b9a7a3cab021e600830c",
+        "repository": "https://github.com/NYU-Processor-Design/nyu-registry.git",
+        "packages": [
+          "nyu-cmake"
+        ]
+      }
+    ]
+  }
+}
