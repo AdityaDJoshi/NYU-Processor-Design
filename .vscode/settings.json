@@ -1,0 +1,10 @@
+{
+    "files.associations": {
+        "ostream": "cpp",
+        "compare": "cpp",
+        "cstdint": "cpp",
+        "chrono": "cpp",
+        "functional": "cpp",
+        "random": "cpp"
+    }
+}
